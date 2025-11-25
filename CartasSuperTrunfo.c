@@ -10,6 +10,8 @@ typedef struct {
     int populacao;
     float areaKm2;
     float pib;
+    float pibPercapita ;
+    float densidadePopulacional;
     int pontosTuristicos;
 } Carta;
 
