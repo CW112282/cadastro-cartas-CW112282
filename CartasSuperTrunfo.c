@@ -10,6 +10,8 @@ typedef struct {
     int populacao;
     float areaKm2;
     float pib;
+    float pibPercapita ;
+    float densidadePopulacional;
     int pontosTuristicos;
 } Carta;
 
@@ -21,13 +23,15 @@ void exibirCarta(Carta carta) {
     printf("População: %d\n", carta.populacao);
     printf("Área (Km²): %.2f\n", carta.areaKm2);
     printf("PIB: %.2f\n", carta.pib);
+    printf("PIB per capita :%.2f\n",carta.pib per capita);
+    printf("Denside populacional:%.2f\n",densidade.populacional);
     printf("Pontos Turísticos: %d\n\n", carta.pontosTuristicos);
 }
 
 int main() {
     // Criando duas cartas como exemplo
-    Carta carta1 = {"Ceará", "001", "Fortaleza", 567900, 987.89, 765767890.00, 50};
-    Carta carta2 = {"Distrito Federal", "002", "Brasília", 76940, 435.67, 76768000.00, 20};
+    Carta carta1 = {"Ceará", "001", "Fortaleza", 567900, 987.89, 765767890.00,1348.42,5.74, 50,};
+    Carta carta2 = {"Distrito Federal", "002", "Brasília", 76940, 435.67, 76768000.00,997.76,1.76, 20};
 
     // Exibindo as cartas criadas
     printf("==== Cartas do Super Trunfo ====\n\n");
